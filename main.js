@@ -6,5 +6,6 @@ document.querySelector('#randInput').addEventListener('input', function (e) {
     document.querySelector('#eurOutput').innerHTML = `€${usd * 0.95}`;
     document.querySelector('#cadOutput').innerHTML = `C$${usd * 1.36}`;
     document.querySelector('#audOutput').innerHTML = `A$${usd * 1.49}`;
+    document.querySelector('#jpyOutput').innerHTML = `¥${usd * 136.67}`;
 
 });
