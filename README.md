@@ -5,5 +5,5 @@
 
 ### How this program can be improved
 
-- [ ] Add More currencies.
+- [x] Add More currencies.
 - [ ] Add a dropdown menu to be able to convert from other currrencies.
