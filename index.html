@@ -20,6 +20,11 @@
         .card {
             padding:5px;
         }
+        .input-group-text {
+            border:0;
+            height:calc(1.5em + 1rem + 8px);
+            background-color: #999;
+        }
     </style>
 </head>
 <body>
@@ -28,31 +33,38 @@
             <div class="col-md-6 offset-md-3">
                 <h1 class="display-4 text-center mb-3">USD Converter</h1>
                 <form>
-                    <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
                         <input 
                         id="randInput"
                         type="number" 
                         class="form-control form-control-lg" 
-                        placeholder="Enter Dollars..." min="1">
+                        placeholder="Enter Value To Convert..." min="1">
                     </div>
                 </form>
                 <div id="output">
-                    <div class="card text-bg-primary mb-2">
+                    <div class="card text-bg-danger mb-2">
                         <div class="card-block">
                             <h4>Rand:</h4>
                             <div id="randOutput"></div>
                         </div>
                     </div>
-                    <div class="card text-bg-success mb-2">
+                    <div class="card text-bg-primary mb-2">
                         <div class="card-block">
                             <h4>EUR:</h4>
                             <div id="eurOutput"></div>
                         </div>
                     </div>
-                    <div class="card text-bg-danger mb-2">
+                    <div class="card text-bg-success mb-2">
                         <div class="card-block">
                             <h4>CAD:</h4>
                             <div id="cadOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card text-bg-warning mb-2">
+                        <div class="card-block">
+                            <h4>AUD:</h4>
+                            <div id="audOutput"></div>
                         </div>
                     </div>
                 </div>
